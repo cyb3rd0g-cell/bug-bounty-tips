@@ -1,0 +1,11 @@
+I start my subdomain enumeration with Tomnomnom’s assetfinder tool. 
+assetfinder --subs-only domain.name
+
+
+use tools like OWASP amass and brute force the subdomains using the wordlist I constructed.
+
+Is there any OAuth flow? Is there any CSRF protection? If yes, how is it implemented? Are there any resources referenced using numerical identifiers? If yes, is there any protection against IDOR vulnerabilities? Does the application use any API? How does the application fetch data? Does it use a front-end Framework? What JavaScript files contain calls to the API? Does it use a back-end Framework? If yes, what is it and which version is being used?
+
+
+
+if the request seems to be fetching data from a database, I would try SQL injection. If the user input gets returned, I will try Cross-Site Scripting. 
